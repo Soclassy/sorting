@@ -3,7 +3,8 @@ import shutil
 import re
 from main import Start
 
-class pred(Start.show_dialog, Start.show_dialog_2, Start.show_dialog_3):
+
+class Pred(Start.show_dialog, Start.show_dialog_2, Start.show_dialog_3):
     # создание папок
     file = open(f'{Start.show_dialog}', 'r')  # необходим текстовый файл с названием папок
     f = file.read()
@@ -72,10 +73,3 @@ class pred(Start.show_dialog, Start.show_dialog_2, Start.show_dialog_3):
                 if os.path.exists(f"{main_folder_path}{folder[c]}/{lol[i][29:39]}"):
                     os.remove(f"{main_folder_path}{folder[c]}/{lol[i][29:39]}")
                 os.rename(f"{main_folder_path}{folder[c]}/{lol[i]}", f"{main_folder_path}{folder[c]}/{lol[i][29:39]}")
-
-
-
-
-
-
-

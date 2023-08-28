@@ -6,8 +6,8 @@ import re
 import os
 import shutil
 
-class Start(QMainWindow):
 
+class Start(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Practice")
@@ -152,10 +152,9 @@ class Start(QMainWindow):
                     os.rename(f"{main_folder_path}{folder[c]}/{lol[i]}",
                               f"{main_folder_path}{folder[c]}/{lol[i][29:39]}")
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = Start()
     window.show()
     app.exec()
-
